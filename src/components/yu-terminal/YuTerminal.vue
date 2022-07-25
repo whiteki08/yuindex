@@ -355,11 +355,14 @@ const terminal: TerminalType = {
 
 onMounted(() => {
   registerShortcuts(terminal);
+ terminal.writeTextOutput(
+    `Welcome to Yifans_Index` +
+      `<a href="//github.com/whiteki08/yuindex" target='_blank'> GitHub Open Source</a>`
+  );
   terminal.writeTextOutput(
-    `Author <a href="//space.bilibili.com/394719166 >Yifans</a>` +
+    `Author <a href="//space.bilibli.com/394719166" target="_blank">Yifans</a>` +
       `: please input 'help' to enjoy`
   );
-  terminal.writeTextOutput("<br/>");
 });
 
 defineExpose({
